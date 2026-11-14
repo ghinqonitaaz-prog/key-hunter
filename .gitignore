@@ -1,0 +1,15 @@
+# dependensi
+node_modules/
+
+# sistem operasi
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# editor
+.vscode/
+.idea/
+
+# log & sementara
+*.log
+*.tmp

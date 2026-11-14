@@ -1,0 +1,6 @@
+# jaga line ending tetap LF di repo
+* text=auto eol=lf
+
+# biner
+*.png binary
+*.jpg binary

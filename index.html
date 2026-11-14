@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#0f1923" />
+  <title>KEY HUNTER — cari kunci, temukan jalan keluar</title>
+  <meta name="description" content="KEY HUNTER: game labirin first-person bergaya tactical shooter — cahaya terbatas, penjaga patroli, AK-47 dengan tiga puluh butir." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="stage" id="stage">
+    <canvas id="view"></canvas>
+    <div class="vignette"></div>
+    <div class="danger" id="danger"></div>
+    <div class="ghost-veil" id="ghost-veil"></div>
+    <div class="grain"></div>
+
+    <div class="hud">
+      <div class="mm-frame">
+        <canvas id="minimap" width="150" height="150"></canvas>
+        <div class="mm-tag">PETA</div>
+      </div>
+
+      <div class="center-top">
+        <div class="level-chip"><span>LEVEL</span><b id="hud-level">01</b></div>
+        <div class="objective" id="objective">AMBIL SEMUA KUNCI</div>
+      </div>
+
+      <div class="right-top">
+        <div class="stat"><span>WAKTU</span><b id="hud-time">0.0</b></div>
+        <div class="stat best"><span>REKOR</span><b id="hud-best">—</b></div>
+        <div class="btns">
+          <button class="ico" id="btn-ghost" title="Mode hantu (G)">👻</button>
+          <button class="ico" id="btn-mute" title="Suara (M)">🔊</button>
+          <button class="ico" id="btn-restart" title="Ulangi (Backspace)">⟳</button>
+        </div>
+      </div>
+
+      <div class="crosshair" id="crosshair"><span></span></div>
+
+      <div class="bottom-bar">
+        <div class="keys" id="keys-row"></div>
+        <div class="ammo" id="ammo">
+          <div class="ammo-bar"><i id="ammo-fill"></i></div>
+          <div class="ammo-num"><b id="ammo-count">30</b><span>/ ∞</span></div>
+          <div class="ammo-tag" id="ammo-tag">AK-47</div>
+        </div>
+        <div class="hint" id="hint">WASD GERAK · KLIK TEMBAK · R RELOAD</div>
+      </div>
+
+      <div class="stick" id="stick" aria-hidden="true"><div class="knob" id="knob"></div></div>
+      <button class="fire-btn" id="fire-btn" aria-label="Tembak">◎</button>
+    </div>
+
+    <div class="overlay show" id="overlay" role="dialog" aria-modal="true"></div>
+  </div>
+
+  <script src="js/maze.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/sentinel.js"></script>
+  <script src="js/raycast.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

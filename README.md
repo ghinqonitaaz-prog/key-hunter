@@ -6,6 +6,8 @@ Kumpulkan semua kunci, buka pintu keluar — atau tembak penjaga yang menghalang
 
 Dibuat tanpa engine dan tanpa aset: renderer raycasting sendiri di canvas 2D, sosok penjaga digambar prosedural, suara disintesis pakai WebAudio, labirin digenerate secara acak.
 
+**Mainkan langsung:** <https://ghinqonitaaz-prog.github.io/key-hunter/>
+
 ![Layar judul](screenshots/judul.png)
 ![Permainan](screenshots/permainan.png)
 ![Menembak](screenshots/menembak.png)
